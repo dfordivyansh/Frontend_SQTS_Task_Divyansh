@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark Que Tech Solutions</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+
+  <body class="bg-white text-gray-800">
+<!-- ===== NAVBAR ===== -->
+<nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-50 transition-all">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#home" class="logo-wrapper">
+      <img src="assets/logo.png" alt="SQTS Logo" class="h-10 logo-img" />
+    </a>
+
+    <!-- RIGHT SIDE -->
+    <div class="flex items-center gap-6">
+
+      <!-- Desktop Menu -->
+      <ul id="navLinks" class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#why" class="nav-link">Why Us</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Dark Mode Toggle -->
+      <button
+        id="themeToggle"
+        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <!-- Hamburger -->
+      <button id="menuBtn" class="hamburger md:hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#why" class="nav-link">Why Us</a>
+    <a href="#testimonials" class="nav-link">Testimonials</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+</nav>
+
+    <!-- ===== HERO ===== -->
+    <section
+      id="home"
+      class="relative h-screen flex items-center justify-center">
+      <img
+        src="assets/banner.png"
+        class="absolute inset-0 w-full h-full object-cover"
+        alt="Banner" />
+
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div class="relative z-10 text-center text-white px-6 fade-up">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+          Spark Que Tech Solutions
+        </h1>
+        <p class="text-lg md:text-xl mb-8">Our wish is accomplish your wish</p>
+        <a
+          href="#contact"
+          class="bg-indigo-600 px-8 py-3 rounded-full hover:bg-indigo-700 transition">
+          Contact Us
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="py-12 bg-gray-50 section">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Services</h2>
+        <p class="text-gray-600 mb-20 max-w-2xl mx-auto">
+          End-to-end digital solutions crafted to scale your business.
+        </p>
+
+        <!-- Carousel Wrapper -->
+        <div class="services-carousel" id="servicesCarousel">
+          <div class="service-box">
+            <div class="service-front">
+              <i class="fa-solid fa-code service-icon"></i>
+              <h3>Web Development</h3>
+            </div>
+            <div class="service-back">
+              <p>Responsive, scalable, high-performance web applications.</p>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-front">
+              <i class="fa-solid fa-chart-line service-icon"></i>
+              <h3>Digital Marketing & SEO</h3>
+            </div>
+            <div class="service-back">
+              <p>
+                SEO and marketing strategies that increase reach and
+                conversions.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-front">
+              <i class="fa-solid fa-pen-nib service-icon"></i>
+              <h3>Graphic Design</h3>
+            </div>
+            <div class="service-back">
+              <p>Creative UI/UX designs and strong brand visuals.</p>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-front">
+              <i class="fa-solid fa-database service-icon"></i>
+              <h3>CRM & Reports</h3>
+            </div>
+            <div class="service-back">
+              <p>Smart CRM systems with real-time insights and analytics.</p>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-front">
+              <i class="fa-solid fa-users service-icon"></i>
+              <h3>Staff Augmentation</h3>
+            </div>
+            <div class="service-back">
+              <p>Hire skilled professionals tailored to your project needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE SQTS : ROADMAP ===== -->
+    <section id="why" class="py-12 bg-white section">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-20">
+          Why Choose SQTS
+        </h2>
+
+        <div class="roadmap">
+          <div class="roadmap-item left">
+            <div class="roadmap-content">
+              <span class="icon-badge">
+                <i class="fa-solid fa-people-group"></i>
+              </span>
+              <h3><b>Experienced Team</b></h3>
+              <p>Skilled professionals with real-world industry experience.</p>
+              <span class="arrow"></span>
+            </div>
+          </div>
+
+          <div class="roadmap-item right">
+            <div class="roadmap-content">
+              <span class="icon-badge">
+                <i class="fa-solid fa-award"></i>
+              </span>
+              <h3><b>Quality Driven</b></h3>
+              <p>Strict quality standards and best development practices.</p>
+              <span class="arrow"></span>
+            </div>
+          </div>
+
+          <div class="roadmap-item left">
+            <div class="roadmap-content">
+              <span class="icon-badge">
+                <i class="fa-solid fa-bullseye"></i>
+              </span>
+              <h3><b>Result Focused</b></h3>
+              <p>Solutions aligned with measurable business outcomes.</p>
+              <span class="arrow"></span>
+            </div>
+          </div>
+
+          <div class="roadmap-item right">
+            <div class="roadmap-content">
+              <span class="icon-badge">
+                <i class="fa-solid fa-clock"></i>
+              </span>
+              <h3><b>On-Time Delivery</b></h3>
+              <p>Strong planning ensures timely and reliable execution.</p>
+              <span class="arrow"></span>
+            </div>
+          </div>
+
+          <div class="roadmap-item left">
+            <div class="roadmap-content">
+              <span class="icon-badge">
+                <i class="fa-solid fa-headset"></i>
+              </span>
+              <h3><b>Dedicated Support</b></h3>
+              <p>Continuous assistance and transparent communication.</p>
+              <span class="arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="py-12 bg-gray-50 section">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Trusted by Clients</h2>
+        <p class="text-gray-600 mb-20 max-w-2xl mx-auto">
+          Hear what our clients say about working with Spark Que Tech Solutions
+        </p>
+
+        <!-- Carousel -->
+        <div class="testimonial-carousel" id="testimonialCarousel">
+          <div class="testimonial-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="" />
+            <p>“Excellent delivery and strong technical expertise.”</p>
+            <h4>Client A</h4>
+            <span>Startup Founder</span>
+          </div>
+
+          <div class="testimonial-card">
+            <img
+              src="https://randomuser.me/api/portraits/women/45.jpg"
+              alt="" />
+            <p>“Very professional team with great communication.”</p>
+            <h4>Client B</h4>
+            <span>Marketing Head</span>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="" />
+            <p>“They understood our requirements perfectly.”</p>
+            <h4>Client C</h4>
+            <span>Product Manager</span>
+          </div>
+
+          <div class="testimonial-card">
+            <img
+              src="https://randomuser.me/api/portraits/women/63.jpg"
+              alt="" />
+            <p>“Reliable, scalable, and on-time delivery.”</p>
+            <h4>Client D</h4>
+            <span>Business Owner</span>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="" />
+            <p>“Great UI/UX and clean code quality.”</p>
+            <h4>Client E</h4>
+            <span>CTO</span>
+          </div>
+
+          <div class="testimonial-card">
+            <img
+              src="https://randomuser.me/api/portraits/women/22.jpg"
+              alt="" />
+            <p>“Highly recommended for digital solutions.”</p>
+            <h4>Client F</h4>
+            <span>Operations Manager</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="py-32 bg-gray-50 section">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-20">
+          Get in Touch
+        </h2>
+
+        <div class="contact-wrapper">
+          <!-- MAP -->
+          <div class="contact-map fade-left">
+            <iframe
+              src="https://www.google.com/maps?q=India&output=embed"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <!-- FORM -->
+          <div class="contact-form fade-right">
+            <h3>Contact Us</h3>
+            <p>Let’s discuss how we can help your business grow.</p>
+
+            <form class="space-y-6">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="contact-input" />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="contact-input" />
+              <textarea
+                rows="4"
+                placeholder="Your Message"
+                class="contact-input"></textarea>
+
+              <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- ABOUT -->
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+          </ul>
+        </div>
+
+        <!-- USEFUL LINKS -->
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>1300 Center Avenue<br />Indore (M.P), India</p>
+          <p><strong>Phone:</strong> 7869109189</p>
+          <p><strong>Email:</strong> sparkquetechsol@gmail.com</p>
+
+          <!-- SOCIAL ICONS -->
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="footer-col newsletter">
+          <h4>Subscription</h4>
+          <p>
+            With our skills put together, you get an ensemble capable of doing
+            anything and everything your brand needs. Subscribe here to get our
+            latest updates.
+          </p>
+
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        Copyright © 2025 IT Company Website. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
